@@ -10,3 +10,5 @@ Access the API at http://127.0.0.1:8000
 Note: 
 -- Please ensure that the data directory exists before running the scraper, as the script will attempt to save the scraped JSON data there.
 -- If you have any suggestions or questions regarding the code or functionality, feel free to reach out!
+
+-- I am working on deploying the code in a single run without executing multiple files separately.
