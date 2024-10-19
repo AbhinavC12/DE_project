@@ -21,10 +21,15 @@
 I have selected six key indicators for each country:
 
 -- Poverty headcount ratio at $2.15 a day (2017 PPP)  of population).
+
 -- Life expectancy at birth, total (years)
+
 -- Population, total
+
 -- Population growth (annual %)
+
 -- Net migration
+
 -- Human Capital Index (HCI) (scale 0-1)
 
 
