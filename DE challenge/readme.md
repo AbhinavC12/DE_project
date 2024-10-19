@@ -8,7 +8,7 @@ Before executing the API, install all the required libraries which are mentioned
 
 2. Run the FastAPI Application
 
--- uvicorn main:app --reload
+-- uvicorn app.main:app --reload
 
 Access the API at http://127.0.0.1:8000
 
