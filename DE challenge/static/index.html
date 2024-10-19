@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Data API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #country-info {
+            margin-top: 20px;
+        }
+        h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Country Data</h1>
+
+    <label for="countrySelect">Select a Country: </label>
+    <select id="countrySelect">
+        <option value="">-- Select a Country --</option>
+    </select>
+    <button onclick="fetchCountryData()">Get Country Data</button>
+
+    <div id="country-info"></div>
+
+    <script>
+        async function loadCountries() {
+            const response = await fetch('/countries');
+            const data = await response.json();
+            const countrySelect = document.getElementById('countrySelect');
+
+            data.countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.text = country;
+                countrySelect.add(option);
+            });
+        }
+
+        async function fetchCountryData() {
+            const country = document.getElementById('countrySelect').value;
+            if (country === "") {
+                alert("Please select a country");
+                return;
+            }
+
+            const response = await fetch(`/countries/${country}`);
+            const data = await response.json();
+
+            const infoContainer = document.getElementById('country-info');
+            infoContainer.innerHTML = `
+                <h3>Country: ${country}</h3>
+                <h4>Country URL: <a href="${data.url}" target="_blank">${data.url}</a></h4>
+                <h4>Indicators:</h4>
+                <ul>
+                    ${data.indicators.map(ind => `<li><strong>${ind.title}:</strong> ${ind.data}</li>`).join('')}
+                </ul>
+            `;
+        }
+
+        window.onload = loadCountries;
+    </script>
+</body>
+</html>
