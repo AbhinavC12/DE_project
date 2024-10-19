@@ -1,3 +1,7 @@
+Before executing the API, install all the required libraries which are mentioned in the requirements.txt by using command 
+
+-- pip install -r requirements.txt 
+
 1. Run the Scraper This will scrape data from the World Bank and save it in data/countries_data.json.
 
 -- python scraper.py or python -m app.scraper
