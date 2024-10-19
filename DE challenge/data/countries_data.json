@@ -1681,6 +1681,35 @@
             }
         ]
     },
+    "Egypt, Arab Rep.": {
+        "url": "https://data.worldbank.org/country/egypt-arab-rep?view=chart",
+        "indicators": [
+            {
+                "title": "Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)",
+                "data": "1.5"
+            },
+            {
+                "title": "Life expectancy at birth, total (years)",
+                "data": "70"
+            },
+            {
+                "title": "Population, total",
+                "data": "112,716,598"
+            },
+            {
+                "title": "Population growth (annual %)",
+                "data": "1.5"
+            },
+            {
+                "title": "Net migration",
+                "data": "-29,998"
+            },
+            {
+                "title": "Human Capital Index (HCI) (scale 0-1)",
+                "data": "0.5"
+            }
+        ]
+    },
     "El Salvador": {
         "url": "https://data.worldbank.org/country/el-salvador?view=chart",
         "indicators": [
@@ -4520,6 +4549,64 @@
             {
                 "title": "Human Capital Index (HCI) (scale 0-1)",
                 "data": "0.8"
+            }
+        ]
+    },
+    "Portugal": {
+        "url": "https://data.worldbank.org/country/portugal?view=chart",
+        "indicators": [
+            {
+                "title": "Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)",
+                "data": "0.2"
+            },
+            {
+                "title": "Life expectancy at birth, total (years)",
+                "data": "82"
+            },
+            {
+                "title": "Population, total",
+                "data": "10,525,347"
+            },
+            {
+                "title": "Population growth (annual %)",
+                "data": "1.1"
+            },
+            {
+                "title": "Net migration",
+                "data": "9,999"
+            },
+            {
+                "title": "Human Capital Index (HCI) (scale 0-1)",
+                "data": "0.8"
+            }
+        ]
+    },
+    "Puerto Rico": {
+        "url": "https://data.worldbank.org/country/puerto-rico?view=chart",
+        "indicators": [
+            {
+                "title": "Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)",
+                "data": "No data available"
+            },
+            {
+                "title": "Life expectancy at birth, total (years)",
+                "data": "80"
+            },
+            {
+                "title": "Population, total",
+                "data": "3,205,691"
+            },
+            {
+                "title": "Population growth (annual %)",
+                "data": "-0.4"
+            },
+            {
+                "title": "Net migration",
+                "data": "19,835"
+            },
+            {
+                "title": "Human Capital Index (HCI) (scale 0-1)",
+                "data": "No data available"
             }
         ]
     },
